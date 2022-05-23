@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.product_wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.product {
+  width: 300px;
+  min-height: 615px;
+  margin: 50px auto 0 auto;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+.product:hover {
+  box-shadow: 0px 0px 8px 4px rgba(34, 60, 80, 0.2);
+}
+.img_wrapper {
+  height: 290px;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.product_wrapper {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border-bottom: 2px solid gray;
+}
+.details {
+  width: 100px;
+  border: 2px solid;
+  border-radius: 5px;
+  color: rgb(0, 102, 255);
+  background-color: transparent;
+  padding: 7px 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.4s;
+  position: relative;
+}
+.details:hover {
+  background-color: rgb(0, 102, 255);
+  color: white;
+  border-color: transparent;
+}
+.product_price p {
+  font-weight: bold;
+  font-size: 23px;
+}
+.details_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  top: -15px;
+  right: -290px;
+  box-shadow: 2px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  background-color: white;
+  padding: 25px;
+  word-break: break-all;
+  z-index: 10;
+}
+.details_info p {
+  font-size: 14px;
+}
+.details_info button {
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.close {
+  color: red;
+  font-size: 16px;
+}
+.wrapper {
+  padding: 15px 20px;
+}
+.add {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 7px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.add:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.delete_cart {
+  width: fit-content;
+  cursor: pointer;
+  color: red;
+  font-size: 10px;
+  padding-left: 10px;
+}
+.delete_cart:hover {
+  text-decoration: underline;
+}
+.search_wrapper {
+  width: 600px;
+  height: 40px;
+  margin: 100px auto 100px auto;
+  display: flex;
+}
+.search_wrapper input {
+  width: 90%;
+  height: 100%;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.search {
+  display: block;
+  margin: auto;
+  color: white;
+  font-size: 20px;
+}
+.search_logo {
+  width: 10%;
+  background-color: rgb(0, 102, 255);
+  padding-top: 10px;
+}
